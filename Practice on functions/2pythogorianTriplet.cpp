@@ -6,7 +6,7 @@ bool check(int x, int y, int z)
     int a = max(x, max(y, z));
     int b, c;
 
-    if (a == x)
+    if (a == x) 
     {
         b = y;
         c = z;
@@ -19,9 +19,9 @@ bool check(int x, int y, int z)
     else
     {
         b = x;
-        c = y;
+        c = y; 
     }
-    if (a * a == b * b + c * c)
+    if (a*a == b*b + c*c)
         return true;
     else
         return false;
@@ -29,7 +29,7 @@ bool check(int x, int y, int z)
 int main()
 {
     int x, y, z;
-    cin >> x >> y >> x;
+    cin >> x >> y >> z;
     if (check(x, y, z))
     {
         cout << "Pythogorean Triplet";
